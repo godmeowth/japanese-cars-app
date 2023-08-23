@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
-import darkThemeStyles from './../common/DarkTheme.module.css';
+import React, { useState } from "react";
+import darkThemeStyles from "./../common/DarkTheme.module.css";
 
 const Navbar = () => {
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setTheme] = useState(false);
 
-    const toggleTheme = () => {
-        setIsDarkTheme(!isDarkTheme);
-        document.body.classList.toggle(darkThemeStyles['dark-theme']); // Toggle the class on body
-    };
+  const toggleTheme = () => {
+    setTheme(!isDarkTheme);
 
-    return (
-        <nav>
-            <h1>Japanese Cars For Sale</h1>
-            <button onClick={toggleTheme}>Toggle Dark Theme</button>
-        </nav>
-    );
+    document.getElementById("root").childNodes.forEach((e) => {
+      e.classList.toggle(darkThemeStyles["dark-theme"]);
+    });
+  };
+
+  return (
+    <nav>
+      <h1>Japanese Cars For Sale</h1>
+      <button onClick={toggleTheme}>Toggle Dark Theme</button>
+    </nav>
+  );
 };
 
 export default Navbar;
