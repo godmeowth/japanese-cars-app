@@ -4,7 +4,7 @@ import store from './redux/store';
 import Navbar from './components/Navbar';
 import CarList from './components/CarList';
 import styles from './appWrapper.module.css'
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import './index.css';
 
 const App = () => {

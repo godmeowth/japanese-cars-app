@@ -10,6 +10,7 @@ const CarItem = ({ car }) => {
             <p>{`Year: ${year}`}</p>
             <p>{`Price: $${price}`}</p>
             {/* Add "Details" link to view the car details */}
+            <hr></hr>
         </div>
     );
 };
