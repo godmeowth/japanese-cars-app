@@ -2,3 +2,8 @@
   background-color: #1a1a1a !important;
   color: #ffffff;
 }
+
+.light-theme {
+  background-color: #959595 !important;
+  color: #000000;
+}
