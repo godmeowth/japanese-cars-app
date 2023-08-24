@@ -1,4 +1,10 @@
-import {SET_CURRENT_CAR, SET_CARS_DATA, UPDATE_CURRENT_PAGE} from './actions';
+import {
+    SET_CURRENT_CAR,
+    SET_CARS_DATA,
+    UPDATE_CURRENT_PAGE,
+    FILTER_BY_ASCENDING_PRICE,
+    FILTER_BY_DESCENDING_PRICE
+} from './actions';
 
 const initialState = {
     currentCar: null,
@@ -23,6 +29,16 @@ const carReducer = (state = initialState, action) => {
             return {
                 ...state,
                 carsData: action.payload,
+            };
+        case FILTER_BY_ASCENDING_PRICE:
+            return {
+                ...state,
+                carsData: state.carsData.slice().sort((a, b) => a.price - b.price),
+            };
+        case FILTER_BY_DESCENDING_PRICE:
+            return {
+                ...state,
+                carsData: state.carsData.slice().sort((a, b) => b.price - a.price),
             };
         default:
             return state;
