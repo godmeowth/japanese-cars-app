@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import CarList from './components/CarList';
 import styles from './appWrapper.module.css'
 import Footer from './components/Footer/Footer';
