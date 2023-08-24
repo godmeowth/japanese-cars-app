@@ -6,6 +6,7 @@ import CarList from './components/CarList';
 import styles from './appWrapper.module.css'
 import Footer from './components/Footer/Footer';
 import './index.css';
+import NavbarContainer from "./components/Navbar/NavbarContainer";
 
 const App = () => {
     return (

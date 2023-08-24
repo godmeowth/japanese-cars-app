@@ -1,7 +1,8 @@
 .container {
+    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    grid-template-columns: 100%;
 }
 
 .navbar {
@@ -18,4 +19,5 @@
     background-color: #333;
     color: white;
     padding: 1rem;
+
 }
