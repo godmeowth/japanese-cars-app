@@ -1,0 +1,17 @@
+.listing {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing:hover {
+  text-decoration: underline;
+}
+
+.flexBoxer {
+  display: flex;
+  margin: 1.2em;
+}
+
+.listingContent {
+  margin: 0 2rem;
+}

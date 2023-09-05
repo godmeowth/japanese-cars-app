@@ -1,10 +1,17 @@
 .switcher {
-    float: right;
-
-
+  float: right;
 }
 
 .heading {
-    color: #ef0460;
-    ;
+  color: #ef0460;
+}
+
+.selector a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.selector a:hover {
+  text-decoration: underline;
 }

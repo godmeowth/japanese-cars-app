@@ -1,24 +1,23 @@
 .container {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
 .content {
-    padding: 1rem;
-    min-height: 100dvh;
+  padding: 1rem;
+  min-height: calc(100dvh - 53.6px - 126.23px - 32px);
 }
 
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }

@@ -1,0 +1,25 @@
+.content {
+  padding: 2rem;
+  min-height: calc(100dvh - 53.6px - 126.23px - 64px);
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.container {
+  margin: 1.5rem 4rem;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content a:visited {
+  color: #0000ee;
+}
